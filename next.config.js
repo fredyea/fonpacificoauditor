@@ -1,8 +1,20 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  devIndicators: {
-    buildActivity: false,
-    buildActivityPosition: 'bottom-right',
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'j4hvvf8.localto.net',
+        port: '',
+        pathname: '/pdf/**',
+      },
+      {
+        protocol: 'http',
+        hostname: 'j4hvvf8.localto.net',
+        port: '',
+        pathname: '/pdf/**',
+      }
+    ],
   }
 }
 
