@@ -1,12 +1,12 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useUser } from '@/app/context/UserContext';
+import { useUser } from '../../../context/UserContext';
 import { format } from 'date-fns';
 import { es } from 'date-fns/locale';
 import { toast } from 'react-hot-toast';
 import Image from 'next/image';
-import { sendNotification } from '@/lib/notifications';
+import { sendNotification } from '../../../../lib/notifications';
 const _servidorapi = `${process.env.NEXT_PUBLIC_API_URL}/`
 export default function PermisosPendientes() {
   const { userData } = useUser();
